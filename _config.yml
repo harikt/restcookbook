@@ -1,3 +1,4 @@
 safe: true
 permalink: pretty
 pygments: true
+source: restcookbook
