@@ -1,6 +1,16 @@
 ---
 layout: default
 ---
+
+<ul class="posts">
+    {% for post in site.posts %}
+    <li>
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>
+        <span class="separator">&raquo;</span> <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+</ul>
+
 <h2 id='welcome_to_the_rest_cookbook'>Welcome to the REST CookBook</h2>
 
 <p>REST is hot! And REST is finally rediscovered by API programmers all over the world. But REST isn't always as easy
