@@ -6,7 +6,7 @@ layout: default
     {% for post in site.posts %}
     <li>
         <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>
-        <span class="separator">&raquo;</span> <a href="{{ post.url }}">{{ post.title }}</a>
+        <span class="separator">&raquo;</span> <a href="/restcookbook/{{ post.url }}">{{ post.title }}</a>
     </li>
     {% endfor %}
 </ul>
